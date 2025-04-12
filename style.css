@@ -96,7 +96,7 @@
   
   /* Hero Section */
   .hero {
-    background: url('/assets/store-6.jpg') center/cover no-repeat;
+    background: url('store-6.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
     justify-content: center;
