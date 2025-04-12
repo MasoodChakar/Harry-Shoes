@@ -1,0 +1,190 @@
+/* Navbar */
+.navbar {
+    border: solid 2px white;
+    background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6600;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #ff6600;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff6600;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff6600;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hamburger menu - hidden on desktop */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+
+/* Footer */
+.footer {
+    background-color: #111;
+    height: 600px;
+    color: white;
+    padding: 2rem;
+    margin-top: 0rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-content {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-info {
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .footer-info h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: x-large;
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #ff6600;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  /* Entrance Animation */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main {
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0; /* ensure hidden before animation */
+}
+
+/* Optional: Add subtle staggered effects */
+.hero-content,
+.product-card,
+.footer {
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+/* Hamburger menu - hidden on desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+ /* Responsive */
+ @media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  } 
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

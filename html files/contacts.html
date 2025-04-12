@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Harry Shoes</title>
+  <link rel="stylesheet" href="/css files/contacts.css" />
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/assets/fav.png" type="image/x-icon">
+
+  <style>
+    body.loading .main {
+      opacity: 0;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.remove("loading");
+    });
+  </script>
+</head>
+<body class="loading">
+
+  <div class="navo">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo"><a href="index.html">Harry Shoes</a></div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-wrapper">
+      <h2>Contact Us</h2>
+      <p class="contact-sub">Got questions or just want to say hello? Drop us a message!</p>
+      <div class="contact-content">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+        <div class="contact-details">
+          <h3>Our Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Sneaker Street, Shoe City, SC 45678</p>
+          <p><i class="fas fa-envelope"></i> support@shoehub.com</p>
+          <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Harry Shoes</h3>
+        <p>123 Sneaker Street, Shoe City, SC 45678</p>
+        <p>Email: support@shoehub.com | Phone: +1 (800) 123-4567</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 ShoeHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
